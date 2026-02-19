@@ -17,8 +17,9 @@ sample_data/raw/
 sample_data/*.gz
 sample_data/*.vcf.gz
 
-# Node (future frontend)
+# Node / frontend
 node_modules/
+frontend/build/
 backend/sample_data/raw/
 *.vcf.gz
 *.gz

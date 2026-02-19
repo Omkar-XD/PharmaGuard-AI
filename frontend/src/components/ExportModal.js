@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { generateClinicalReport } from "../api";
 import "./ExportModal.css";
 
 const FORMATS = [

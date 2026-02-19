@@ -215,7 +215,7 @@ export default function EnhancedBackgroundPaths() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentPattern((prev) => (prev + 1) % patterns.length);
+      setCurrentPattern((prev) => (prev + 1) % 4);
     }, 12000);
     return () => clearInterval(interval);
   }, []);
