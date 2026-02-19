@@ -1,0 +1,42 @@
+/* ═══════════════════════════════════════════════════════════
+   PharmaGuard AI — Base Styles
+   ═══════════════════════════════════════════════════════════ */
+
+/* Force dark background */
+html,
+body,
+#root {
+  background-color: var(--navy-deep) !important;
+  background: var(--navy-deep) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-body), sans-serif !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 168, 150, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 168, 150, 0.5);
+}

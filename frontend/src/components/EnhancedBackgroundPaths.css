@@ -1,0 +1,230 @@
+/* Enhanced Background Paths — PharmaGuard Hero */
+
+.enhanced-background {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    var(--navy-deep) 0%,
+    var(--navy-mid) 50%,
+    var(--navy-deep) 100%
+  );
+}
+
+.enhanced-paths-container {
+  position: absolute;
+  inset: 0;
+  color: var(--teal);
+  opacity: 0.2;
+}
+
+.enhanced-paths-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.enhanced-paths-flow {
+  opacity: 0.25;
+}
+
+.enhanced-pattern-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.enhanced-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(27, 43, 94, 0.6) 0%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 43, 94, 0.6) 100%
+  );
+  pointer-events: none;
+}
+
+.enhanced-pattern-dots {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+}
+
+.enhanced-pattern-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transition: background 0.3s;
+}
+
+.enhanced-pattern-dot.active {
+  background: var(--teal);
+}
+
+.enhanced-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1024px;
+  padding: 24px 16px;
+  text-align: center;
+}
+
+.enhanced-inner {
+  margin: 0 auto;
+}
+
+.enhanced-title-wrap {
+  margin-bottom: 32px;
+}
+
+.enhanced-title {
+  font-size: clamp(48px, 10vw, 96px);
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  font-family: var(--font-display), sans-serif;
+}
+
+.enhanced-title-word {
+  display: inline-block;
+  margin-right: 24px;
+}
+
+.enhanced-title-word:last-child {
+  margin-right: 0;
+}
+
+.enhanced-title-letter {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    var(--text-primary) 0%,
+    var(--text-secondary) 50%,
+    var(--gray-muted) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.7s;
+}
+
+.enhanced-title-letter:hover {
+  background: linear-gradient(135deg, var(--teal), var(--purple-ai));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.enhanced-subtitle {
+  font-size: clamp(16px, 2.5vw, 22px);
+  color: var(--text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.enhanced-cta-wrap {
+  display: inline-block;
+}
+
+.enhanced-cta-btn {
+  position: relative;
+  padding: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--teal),
+    var(--purple-ai),
+    #EC4899
+  );
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.enhanced-cta-btn:hover {
+  background: linear-gradient(
+    90deg,
+    #00C4B3,
+    #8B5CF6,
+    #F472B6
+  );
+  transform: translateY(-4px);
+  box-shadow: 0 0 40px rgba(0, 168, 150, 0.4);
+}
+
+.enhanced-cta-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 48px;
+  background: var(--navy-deep);
+  border-radius: 14px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: background 0.3s;
+}
+
+.enhanced-cta-btn:hover .enhanced-cta-inner {
+  background: rgba(36, 59, 107, 0.9);
+}
+
+.enhanced-cta-arrow {
+  font-size: 20px;
+}
+
+.enhanced-pattern-info {
+  margin-top: 48px;
+  font-size: 12px;
+  font-family: var(--font-mono), monospace;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.enhanced-pattern-name {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.enhanced-float {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.enhanced-float-1 {
+  top: 25%;
+  left: 25%;
+  width: 16px;
+  height: 16px;
+  background: rgba(0, 168, 150, 0.2);
+  filter: blur(8px);
+}
+
+.enhanced-float-2 {
+  top: 75%;
+  right: 33%;
+  width: 24px;
+  height: 24px;
+  background: rgba(124, 58, 237, 0.2);
+  filter: blur(8px);
+}
