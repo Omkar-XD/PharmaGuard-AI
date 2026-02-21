@@ -20,7 +20,7 @@ def health():
     return {"status": "ok", "service": "PharmaGuard"}
 
 origins = [
-    "https://pharma-code.vercel.app",
+    "https://pharma-guard-ai-rho.vercel.app/",
     "http://localhost:3000",
     "http://localhost:3001",
     "http://127.0.0.1:3000",
